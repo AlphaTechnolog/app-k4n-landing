@@ -14,37 +14,37 @@ const MyImage = () => (
     >
       <img
         className="atropos-banner-spacer"
-        src="/assets/images/atropos-bg.svg"
+        src="/app-k4n-landing/assets/images/atropos-bg.svg"
         alt=""
       />
       {/* <img
         data-atropos-offset="-4.5"
-        src="/assets/images/atropos-bg.svg"
+        src="/app-k4n-landing/assets/images/atropos-bg.svg"
         alt=""
 /> */}
       <img
         data-atropos-offset="-2.5"
-        src="/assets/images/atropos-mountains.svg"
+        src="/app-k4n-landing/assets/images/atropos-mountains.svg"
         alt=""
       />
       <img
         data-atropos-offset="0"
-        src="/assets/images/atropos-forest-back.svg"
+        src="/app-k4n-landing/assets/images/atropos-forest-back.svg"
         alt=""
       />
       <img
         data-atropos-offset="2"
-        src="/assets/images/atropos-forest-mid.svg"
+        src="/app-k4n-landing/assets/images/atropos-forest-mid.svg"
         alt=""
       />
       <img
         data-atropos-offset="4"
-        src="/assets/images/atropos-forest-front.svg"
+        src="/app-k4n-landing/assets/images/atropos-forest-front.svg"
         alt=""
       />
       <img
         data-atropos-offset="5"
-        src="/assets/images/K4N_wl.svg"
+        src="/app-k4n-landing/assets/images/K4N_wl.svg"
         alt=""
       />
     </Atropos>
