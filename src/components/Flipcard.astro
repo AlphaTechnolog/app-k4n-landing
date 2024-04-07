@@ -1,0 +1,67 @@
+---
+const frontImage = "https://github.com/jags1906.png";
+const backImage = "https://github.com/alphatechnolog.png";
+---
+
+<div class="flip-card w-full flex flex-col gap-y-4 justify-center items-center">
+  <div class="flip-card-inner mb-[128px]">
+    <div class="flip-card-front flex justify-center items-center w-full">
+      <img
+        class="rounded-full border border-solid border-gray-700"
+        src={frontImage}
+        width="128"
+        height="128"
+        alt="face"
+      />
+    </div>
+    <div class="flip-card-back flex justify-center items-center w-full">
+      <img
+        class="rounded-full border border-solid border-gray-700"
+        src={backImage}
+        width="128"
+        height="128"
+        alt="back face"
+      />
+    </div>
+  </div>
+  <div class="flex flex-col justify-center items-center gap-y-2">
+    <h3 class="text-2xl font-semibold">
+      John Doe
+    </h3>
+    <p class="text-justify text-sm font-light">
+      Lorem ipsum dolor sit amet consectetur
+    </p>
+  </div>
+</div>
+
+<style>
+  .flip-card {
+    perspective: 1000px;
+  }
+
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+  }
+
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+
+  .flip-card-front,
+  .flip-card-back {
+    position: absolute;
+    backface-visibility: hidden;
+  }
+
+  .flip-card-front {
+    z-index: 2;
+  }
+
+  .flip-card-back {
+    transform: rotateY(-180deg);
+  }
+</style>

@@ -1,0 +1,45 @@
+<section>
+    <h3 class="text-4xl font-bold text-left">
+        Contáctanos
+    </h3>
+    
+    <form class="flex flex-col justify-center items-start gap-y-2 mt-6">
+        <section class="flex flex-col justify-center items-start gap-y-1 w-full">
+            <label for="name">Nombre</label>
+            <input
+                type="text"
+                id="name"
+                placeholder="Ingrese su nombre"
+                required
+                class="w-full placeholder:text-blue-300/80 rounded-xl bg-[#0f172b] p-3 text-[16px] outline-none transition-all duration-300 hover:border-blue-500 focus:border-blue-700 border-2 border-solid border-blue-400"
+            />
+        </section>
+        <section class="flex flex-col justify-center items-start gap-y-1 w-full">
+            <label for="email">Email</label>
+            <input
+                type="email"
+                id="email"
+                placeholder="Ingrese su email"
+                required
+                class="w-full placeholder:text-blue-300/80 rounded-xl bg-[#0f172b] p-3 text-[16px] outline-none transition-all duration-300 hover:border-blue-500 focus:border-blue-700 border-2 border-solid border-blue-400"
+            />
+        </section>
+        <section class="flex flex-col justify-center items-start gap-y-1 w-full">
+            <label for="message">Mensaje</label>
+            <textarea
+                id="message"
+                placeholder="Ingrese su nombre"
+                required
+                class="w-full resize-none h-[15rem] placeholder:text-blue-300/80 rounded-xl bg-[#0f172b] p-3 text-[16px] outline-none transition-all duration-300 hover:border-blue-500 focus:border-blue-700 border-2 border-solid border-blue-400"
+            />
+        </section>
+        <section class="w-full mt-4">
+            <button
+                type="submit"
+                class="w-full rounded-full py-3 text-center font-semibold bg-gradient-to-r from-blue-500 to-blue-600 cursor-pointer transition-colors duration-300 hover:from-blue-400 hover:to-blue-700"
+            >
+                Enviar
+            </button>
+        </section>
+    </form>
+</section>
