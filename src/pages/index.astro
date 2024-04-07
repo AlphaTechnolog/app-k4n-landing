@@ -24,9 +24,13 @@ const texts = {
 ---
 
 <script>
+	// @ts-ignore
 	import { tsParticles } from "https://cdn.jsdelivr.net/npm/@tsparticles/engine@3.1.0/+esm";
+
+	// @ts-ignore
 	import { loadAll } from "https://cdn.jsdelivr.net/npm/@tsparticles/all@3.1.0/+esm";
-	import paticlesConfig from "../components/configs/particles-config";
+
+	import particlesConfig from "../components/configs/particles-config";
 
 	async function loadParticles(options: Record<string, any>) {
 		await loadAll(tsParticles);
@@ -34,7 +38,7 @@ const texts = {
 		await tsParticles.load({ id: "tsparticles", options });
 	}
 
-	loadParticles(paticlesConfig);
+	loadParticles(particlesConfig);
 </script>
 
 <Layout title="K4N - Studios">
@@ -56,7 +60,7 @@ const texts = {
 	</main>
 </Layout>
 
-<style global>
+<style is:global>
 	main {
 		margin: auto;
 		padding: 1rem;
