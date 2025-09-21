@@ -1,24 +1,18 @@
 ---
 import astroLogo from "../assets/astro.svg";
 import background from "../assets/background.svg";
+import Logo from "./Logo.astro"
 
-import lightLogo from "../assets/k4n/K4N_w.svg";
-import darkLogo from "../assets/k4n/K4N_b.svg";
-
-const mode = "dark";
+const mode = "dark"; // Cambia a "light" para modo claro
 const year = new Date().getFullYear();
-
-const getLogo = () => {
-  const logos = { light: darkLogo, dark: lightLogo };
-
-  return logos[mode];
-};
 ---
 
 <div id="container" class={mode}>
   <main>
     <section id="hero">
-      <img id="logo" src={getLogo().src} />
+      <div id="logo">
+        <Logo />
+      </div>
     </section>
     <div id="footer">
       <p class={`${mode}Text`}>
@@ -42,6 +36,7 @@ const getLogo = () => {
 
   .dark {
     background-color: oklch(20.5% 0 0);
+    --logo-color: #ffffff;
   }
 
   .darkText {
@@ -50,6 +45,7 @@ const getLogo = () => {
 
   .light {
     background-color: white;
+    --logo-color: #000000;
   }
 
   .lightText {
@@ -87,6 +83,11 @@ const getLogo = () => {
     width: 25%;
     height: auto;
     animation: beat 5s infinite ease-in-out;
+  }
+
+  #logo svg {
+    width: 100%;
+    height: auto;
   }
 
   h1 {
@@ -213,6 +214,11 @@ const getLogo = () => {
 
     #logo {
       width: 50%;
+    }
+
+    #logo svg {
+      width: 100%;
+      height: auto;
     }
 
     #links {

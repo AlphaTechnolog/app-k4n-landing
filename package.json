@@ -6,7 +6,8 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "build:svg:component": "bun scripts/build-svg-component.ts"
   },
   "dependencies": {
     "astro": "^5.13.3"
